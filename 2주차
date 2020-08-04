@@ -8,9 +8,10 @@
     <meta name="generator" content="brakets">
     <title>WEBSTROYBOY SITE</title>
 
-    <!-- CSS STYLE -->
+    <!-- CSS STYLE (합치면서 연동 풀어줌)
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    -->
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/lightgallery.css">
    
@@ -22,7 +23,7 @@ body, div, ul, li, dl, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, 
 a {color: #222; text-decoration: none;}
 a:hover {color: #390;}
 
-/* 폰트 초기화 */
+/* 폰트 초기화 (폰트 없으면 차례로 다음 폰트 찾아서 맞추기)*/
 body, input, textarea, select, button, table {
     font-family:'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222; font-size: 13px; line-height: 1.5;}
 
@@ -59,7 +60,7 @@ button {border: 0;}
     </style>
     
     <style>
-    /* 스킵 내비게이션 */
+/* 스킵 내비게이션 */
 #skip {position: relative;}
 #skip a {position: absolute; left: 0px; top: -35px; border: 1px solid #fff; color: #fff; background: #333; line-height: 30px; width: 200px; text-align: center;}
 #skip a:active,
@@ -67,7 +68,7 @@ button {border: 0;}
 
 /* 레이아웃 */
 #wrap {}
-#header {height: 325px; margin: 0 auto; background: url(../img/header_bg.jpg) center top repeat-x}
+#header {height: 325px; margin: 0 auto; background: url(../img/header_bg.jpg) center top repeat-x /* 이미지를 링크에서 가져오고, 크기 줄이고 늘려도 그대로 유지 */}
 #contents {}
 #footer {border-top: 1px solid #eee;}
 
@@ -78,11 +79,11 @@ button {border: 0;}
 #cont_cont {background-color: #f6fdff;}
 
 /* 컨테이너 */
-.container {width: 990px; margin: 0 auto; height: inherit; /*background: rgba(255,255,255,0.3);*/}
+.container {width: 990px; margin: 0 auto; height: inherit; /*background: rgba(255,255,255,0.3);, height: inherit=종속적으로 맞추기*/}
 
 /* 헤더 */
-.header .header-menu {text-align: right;}
-.header .header-menu a {color: #fff; font-size: 18px; padding: 13px 13px 13px 13px; display: inline-block;}
+.header .header-menu {text-align: right;} /* text-align: 정렬방향 */
+.header .header-menu a {color: #fff; font-size: 18px; padding: 13px 13px 13px 13px; display: inline-block; /* display구조 속성 바꾸기 */}
 .header .header-menu a:hover {color: #666;}
 .header .header-tit {text-align: center;}
 .header .header-tit h1 {background: #4aa8d4; font-size: 28px; padding: 5px 20px 6px 20px; display: inline-block; color: #fff; margin-top: 40px; font-weight: normal; text-transform: uppercase;}
