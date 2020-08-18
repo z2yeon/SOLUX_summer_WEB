@@ -97,6 +97,14 @@
 .movie_chart > div > div > div .infor .infor_btn a {float: left; width: 49%; margin-right: 2%; text-align: center; background: #f2f2f2; font-size: 18px; padding: 15px; box-sizing: border-box;}
 .movie_chart > div > div > div .infor .infor_btn a:last-child {margin-right: 0;}
 
+/* 이벤트 */
+.event {overflow: hidden; padding: 100px 0;}
+.event img {display: block;}
+.event h2 {font-size: 30px; font-weight: 500; margin-bottom: 20px;}
+.event_left {float: left; width: 66%; margin-right: 2%;}
+.event_left .event_box1 {float: left; width: 50%;}
+.event_left .event_box2 {float: left; width: 50%;}
+.event_right {float: left; width: 32%;}
 
 /* 미디어쿼리 */
 @media (max-width: 1290px){
